@@ -227,31 +227,46 @@ footer {
 .p-1 { padding: var(--spacing); }
 
 /* Responsive design */
+/* General styling for smaller screens */
 @media (max-width: 768px) {
-    .nav-links {
-        gap: 1rem;
-        flex-direction: column; /* Stack links vertically */
-        align-items: center;
+    /* Adjust logo and header styling */
+    .nav-logo {
+        max-width: 60px;
+        margin-right: auto;
     }
-    
+
+    /* Adjust navigation links */
+    .nav-links {
+        flex-wrap: wrap; /* Allow wrapping */
+        gap: 0.5rem;
+        font-size: 0.9rem; /* Smaller font for better fit */
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Reduce spacing in individual links */
+    .nav-links a {
+        padding: 0.3rem; /* Smaller padding for tighter fit */
+        margin: 0;
+    }
+
+    /* Align navigation items better */
     .nav-container {
-        flex-direction: column;
+        display: flex;
         align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
     }
 }
 
 @media (max-width: 480px) {
+    /* Even smaller font and padding adjustments */
     .nav-links a {
-        font-size: 0.9rem; /* Reduce font size for smaller screens */
-        padding: 0.5rem 0; /* Less padding */
+        font-size: 0.8rem;
+        padding: 0.2rem;
     }
-    
+
     .nav-container {
-        gap: 0.5rem;
-        padding: 0.5rem;
-    }
-    
-    .nav-logo {
-        font-size: 1.2rem; /* Slightly smaller logo text */
+        padding: 0.2rem 0.5rem;
     }
 }
