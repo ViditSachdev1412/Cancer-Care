@@ -229,10 +229,14 @@ footer {
 /* Responsive design */
 /* General styling for smaller screens */
 @media (max-width: 768px) {
-    /* Adjust logo and header styling */
+    /* Hide logo on smaller screens */
     .nav-logo {
-        max-width: 60px;
-        margin-right: auto;
+        display: none;
+    }
+
+    /* Adjust the header to center the links */
+    .nav-container {
+        justify-content: center;
     }
 
     /* Adjust navigation links */
